@@ -3,4 +3,4 @@ version: "2.7"
 status:
     address: 0.0.0.0:2114
 http:
-  address: "0.0.0.0:8080"  # Must be 0.0.0.0 (not 127.0.0.1)
+  address: "0.0.0.0:8080"  #Must be 0.0.0.0 (not 127.0.0.1)
