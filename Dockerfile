@@ -60,3 +60,8 @@ RUN mv ./rr-bin/roadrunner-$RR_VERSION-linux-amd64/rr . && \
     rm -rf ./rr-bin && \
     php artisan octane:install --server=roadrunner && \
     chmod 764 rr
+# ... (keep all your existing code above) ...
+
+# Add this at the end:
+EXPOSE 8080  # Tells Docker the app uses port 8080
+CMD ["./rr", "serve", "-v", "-d"]  # Starts RoadRunner directly
